@@ -1,6 +1,6 @@
 x="words.txt"
 while IFS=' ' read -r line ; do
-  for word in $line ; do
+   for word in $line ; do
   clean=$(echo "$word" | tr -d ',.;')
   reverse=$(echo "$clean" | rev)
 
@@ -11,4 +11,6 @@ while IFS=' ' read -r line ; do
   fi
 
   done
+
+
 done < "$x"

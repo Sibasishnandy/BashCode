@@ -13,3 +13,4 @@ read studentmarks
 echo "$studentroll|$studentname|$studentmarks" >> $temp
 i=$((i+1))
 done
+

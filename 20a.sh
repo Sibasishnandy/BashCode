@@ -5,9 +5,9 @@ birthmonth=$( echo "$birthdate" | cut -d'/' -f2 )
 birthyear=$( echo "$birthdate" | cut -d'/' -f3 )
 
 
-currentday=20
-currentmonth=01
-currentyear=2025
+currentday=$(date +%d)
+currentmonth=$(date +%m)
+currentyear=$(date +%Y)
 
 
 month=$((currentmonth-birthmonth))

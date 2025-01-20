@@ -1,18 +1,18 @@
-
 isprime(){
-  x=$1
-  if [ $x -lt 2 ] ; then
-  echo "$x is niether prime not composite"
+  value=$1
+  if [ $value -le 1 ] ; then
+  echo "$value Neither prime neither composite"
   else
   i=2
-  while [ $i -le $((x-1)) ] ; do
-  if [ $((x % i)) -eq 0 ] ; then
-  echo "$x is composite"
+  while [ $i -le $((value-1)) ] ; do
+  decison=$((value%i))
+  if [ $decison -eq 0 ] ; then
+  echo "$value Composite"
   return
   fi
   i=$((i+1))
   done
-  echo "$x is prime"
+  echo "$value prime"
   fi
 }
 if [ "$#" -ne 2 ] ; then
