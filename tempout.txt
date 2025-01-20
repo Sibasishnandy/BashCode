@@ -1,0 +1,6 @@
+Sunday|25|Hot
+Monday|35|Very Hot
+Tuesday|45|Very Hot
+Sunday|25|Hot
+Monday|35|Very Hot
+Tuesday|45|Very Hot
